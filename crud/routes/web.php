@@ -24,7 +24,8 @@ Route::get('/jawaban', function () {
     return view('jawaban');
 });
 
-Route::get('/items', function () {
+Route::get('/items/create', function () {
     return view('master');
 });
-
+Route::post('/items', 'ItemsController@store');
+Route::get('/items', 'ItemsController@index');

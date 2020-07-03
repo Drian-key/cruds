@@ -10,7 +10,7 @@ class ItemModel {
     }
 
     public static function save($data){
-        $new_items = DB::table('items')->insert($data);
-        return $new_items;
+        $new_item = DB::table('items')->insert($data);
+        return $new_item;
     }
 }

@@ -15,6 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/items', function () {
-    return view('item.index');
+Route::get('/pertanyaan', function () {
+    return view('pertanyaan');
 });
+
+
+Route::get('/jawaban', function () {
+    return view('jawaban');
+});
+
+Route::get('/items', function () {
+    return view('master');
+});
+
